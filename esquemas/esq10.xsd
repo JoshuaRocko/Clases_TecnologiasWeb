@@ -1,0 +1,12 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="web-app">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="display-name" type="xs:string" />
+				<xs:element name="description" type="xs:string" />
+			</xs:sequence>
+			<xs:attribute name="version" type="xs:string" use="required"/>
+			<xs:attribute name="metadata-complete" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,12 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="raiz">
+		<xs:complexType>
+			<xs:attribute name="atributo1" type="xs:string" use="required"/>
+			<!--<xs:sequence> 
+				<xs:element name="a" type="xs:string" />
+				<xs:element name="b" type="xs:string" />
+				<xs:element name="c" type="xs:string" />
+			</xs:sequence>-->
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

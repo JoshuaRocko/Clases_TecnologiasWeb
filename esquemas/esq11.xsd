@@ -1,0 +1,21 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="simple1">
+		<xs:restriction base="xs:integer">
+			<xs:maxInclusive value="10"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="complejo1">
+		<xs:sequence>
+			<xs:element name="a" type="xs:string"/>
+			<xs:element name="b" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="raiz">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="c" type="simple1"/>
+				<xs:element name="d" type="complejo1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

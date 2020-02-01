@@ -1,0 +1,11 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="b">
+		<xs:complexType>
+			<xs:sequence minOccurs="1" maxOccurs="2">
+				<xs:element name="c" type="xs:string" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="d" type="xs:string" minOccurs="0" maxOccurs="1"  />
+			</xs:sequence>
+			<xs:attribute name="atributo" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,14 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="raiz">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<!--xs:pattern value="[0-9]+" /-->
+				<!--xs:pattern value="[a-zA-Z0-9]+" /-->
+				<!--xs:pattern value="xxx" /-->
+				<!--xs:pattern value="x{2,5}" /-->
+				<!--xs:pattern value="\d+" /-->
+				<xs:pattern value="\w+" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,28 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="struts-config">
+		<xs:complexType>
+			<xs:sequence >
+				<xs:element name="form-beans"/>
+				<xs:element name="global-exceptions"/>
+				<xs:element name="global-forwards">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="forward"/>
+						</xs:sequence>
+						<xs:attribute name="name" type="xs:string" use="required"/>
+						<xs:attribute name="path" type="xs:string" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="action-mappings">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="action"/>
+						</xs:sequence>
+						<xs:attribute name="path" type="xs:string" use="required"/>
+						<xs:attribute name="forward" type="xs:string" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
